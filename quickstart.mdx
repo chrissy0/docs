@@ -1,86 +1,58 @@
 ---
 title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+description: 'Start generating awesome images in under 5 minutes'
 ---
 
-## Setup your development
+<img
+  style={{ borderRadius: '0.5rem' }}
+  src="/images/hero-suitcase-cropped.png"
+  alt="Hero image of a suitcase"
+/>
 
-Learn how to update your docs locally and deploy them to the public.
+## Create your account
 
-### Edit and preview
+Head over to [the signup page](https://productlab.so/login/) and create an account. Make sure to check your spam folder, as our emails sometimes end up there. You'll receive a $5 signup bonus, so you can get started with generating images right away.
+
+## Define your desired images
+
+After signup, you'll be redirected to the ProductLab.so Studio. On desktop devices, you will see a sidebar with a form, allowing you to define your desired images. On mobile, you will see a _Generate ✨_ button. Clicking it will reveal the same form. Let's go through the available form fields.
+
+### Positive Prompt (Product)
+
+In this field, describe the product you're trying to put into a new setting. For example, `a soap dispenser`, `a book`, `a knife` or `a suitcase`. Keep it short, without unnecessary detail. For example, entering `a kitchen knife` rather than `a knife` might influence the image generation, putting your product in a kitchen.
+
+### Positive Prompt (Background)
+
+This field works similarly to the previous one. Just describe your desired background. For example, `on a marble plate, in a flower field`, `on a wooden desk`, `on a kitchen counter, top down view` or `at an airport`. The product prompt and the background prompt together should form a complete sentence, e.g. `a soap dispenser on a marble plate, in a flower field`, `a book on a wooden desk`, `a knife on a kitchen counter, top down view` or `a suitcase at an airport`.
+
+### Negative Prompt
+
+This field is optional. If ProductLab is putting undesired objects in the generated images, mention them here to prevent them from showing up. For example, if you don't want any people to show up in the images, type `human, person, people` (comma separated).
+
+### Image Upload
+
+Upload an image of your product. Make sure it's fully visible (not cut off) and the primary subject of the image. We currently support `.png`, `.jpg` and `.jpeg` images up to 5MB. The image does not have to have a white background, in fact our AI is often better able to realistically place an object in a new setting if it has some information on the real background, such as shadows.
+
+### Number of Images to Generate
+
+Enter the number of images to generate. It's a good idea to start with a low number to test a few different configurations, then ramping it up to find the ideal image.
+
+### Resolution
+
+Select the target solution of the generated image.
+
+## Generating your images
+
+If you're happy with your inputs, you can hit _Generate ✨_ to start the image generation process. Generating images cost $0.02/image. It will take somewhere between 2 to 5 minutes to generate your images. You can feel free to leave the site and come back later. Once done, the images will appear in the main panel with a watermark.
+
+## Unlocking images
+
+If you've generated an image you're happy with, you can unlock it with the click of a button for $1.00. You can then immediately download it without watermark in full resolution. It's yours to keep forever, and all the rights to the image go over to you.
+
+## Trouble Shooting
 
 <AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `mint.json` is): ``` mintlify dev ```
+  <Accordion icon="ghost" title="Floating objects">
+    If your products are floating in the air or otherwise look unrealistic due to perspective, please refer to [this guide](/troubleshooting/floating-objects).
   </Accordion>
 </AccordionGroup>
-
-### Deploy your changes
-
-<AccordionGroup>
-
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
-
-<CardGroup>
-
-<Card title="Style Your Docs" icon="paintbrush" href="/settings/global">
-  Add flair to your docs with personalized branding.
-</Card>
-
-<Card
-  title="Add API Endpoints"
-  icon="square-code"
-  href="/api-playground/configuration"
->
-  Implement your OpenAPI spec and enable API user interaction.
-</Card>
-
-<Card
-  title="Integrate Analytics"
-  icon="chart-mixed"
-  href="/analytics/supported-integrations"
->
-  Draw insights from user interactions with your documentation.
-</Card>
-
-<Card
-  title="Host on a Custom Domain"
-  icon="browser"
-  href="/settings/custom-domain/subdomain"
->
-  Keep your docs on your own website's subdomain.
-</Card>
-
-</CardGroup>

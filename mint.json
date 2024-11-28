@@ -5,7 +5,7 @@
     "dark": "/logo/icon.png",
     "light": "/logo/icon.png"
   },
-  "favicon": "/icon.png",
+  "favicon": "/logo/icon.png",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -31,24 +31,27 @@
     {
       "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "quickstart"
       ]
     },
     {
       "group": "Essentials",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "essentials/prompting"
+      ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/floating-objects"
       ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/chrissyinspace"
+  },
+  "modeToggle": {
+    "default": "dark",
+    "isHidden": true
   }
 }
